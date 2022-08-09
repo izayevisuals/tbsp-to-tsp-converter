@@ -21,7 +21,7 @@ h1 {
     color: rgb(61, 18, 18);
 }
 
-p, span {
+p, span, h2 {
     font-family: 'Fuzzy Bubbles', cursive;
     color: rgb(61, 18, 18);
 }
