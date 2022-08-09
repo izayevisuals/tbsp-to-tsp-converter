@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tbsp to Tsp Converter</title>
+
+    <!-- Stylesheet Links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Tbsp to Tsp Converter</h1>
     <p>Middle of baking and can't convert the units in your head? I'll convert them for you!</p>
-        <span>
+        <span class='conversionProblem'>
             "I have <input id="tbspValue"> <label>tablespoon(s)</label> which is equal to..."
         </span>
-        <input id="convertTbsp" type="submit" value="Convert!">
+        <input class="convertButton" id="convertTbsp" type="submit" value="Convert!">
 
-        <a href="flippedconversion.html"><button type="submit" value="Flip Units">Flip Units</button></a>
+        <a class="flipButton" href="flippedconversion.html"><button type="submit" value="Flip Units">Flip Units</button></a>
 
-    <h2 id="tspValue"></h2>
+    <h2 class="conversionDisplay" id="tspValue"></h2>
 
     <script src="main.js" type="text/javascript"></script>
 </body>

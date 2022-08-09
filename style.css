@@ -1,0 +1,30 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url('baking-wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+/* Typography: 
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Hachi Maru Pop', cursive;
+*/
+
+h1 {
+    font-family: 'Hachi Maru Pop', cursive;
+    color: rgb(61, 18, 18);
+}
+
+p, span {
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: rgb(61, 18, 18);
+}
+
+
+
