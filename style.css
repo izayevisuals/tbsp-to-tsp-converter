@@ -5,10 +5,15 @@ html {
 body {
     box-sizing: border-box;
     background-image: url('baking-wallpaper.jpg');
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem;
 }
 
 /* Typography: 
@@ -19,12 +24,104 @@ font-family: 'Hachi Maru Pop', cursive;
 h1 {
     font-family: 'Hachi Maru Pop', cursive;
     color: rgb(61, 18, 18);
+    font-size: 3rem;
 }
 
 p, span, h2 {
     font-family: 'Fuzzy Bubbles', cursive;
     color: rgb(61, 18, 18);
+    font-size: 1.3rem;
+    display: block;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Chat Box Style */
+.chatBox {
+    border: 3px solid rgb(61, 18, 18);
+    border-radius: 1.3rem;
+    padding: 3rem 2rem;
+    background-color: rgb(246, 235, 221);
+    position: relative;
+}
+
+.chatBoxArrow {
+    border-right: 3px solid rgb(61, 18, 18);
+    border-bottom: 3px solid rgb(61, 18, 18);
+    padding: 1.5rem 1.5rem;
+    background-color: rgb(246, 235, 221);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 290px;
+    bottom: -28px;
 }
 
 
+/* Button & Input Style */
 
+.convertButton, button {
+    border: 3px solid rgb(61, 18, 18);
+    border-radius: 1.3rem;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: rgb(61, 18, 18);
+    background-color: rgb(243, 183, 140);
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1rem 0rem;
+}
+
+.convertButton:hover, button:hover {
+    transition: 0.4s;
+    background-color: rgb(61, 18, 18);
+    color: rgb(243, 183, 140);
+    border: 3px solid rgb(243, 183, 140);
+}
+
+input {
+    border: 3px solid rgb(61, 18, 18);
+    border-radius: 1.3rem;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: rgb(61, 18, 18);
+    background-color: rgb(247, 247, 237);
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+/* Media Query */
+
+@media all and (max-width: 781px) {
+    .chatBoxArrow {
+    position: absolute;
+    right: 140px;
+    bottom: -28px;
+    }
+}
+
+@media all and (max-width: 660px) {
+    .chatBoxArrow {
+    position: absolute;
+    right: 100px;
+    bottom: -28px;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .chatBoxArrow {
+    display: none;
+    }
+}
+
+@media all and (min-width: 275px) and (max-width: 500px) {
+    .chatBox {
+        width: 95%;
+        padding: 2rem
+    }
+
+    h1 {
+    font-size: 6vw;
+    text-align: center;
+    }
+}
