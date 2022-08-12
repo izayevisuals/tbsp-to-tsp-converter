@@ -4,5 +4,5 @@ function convertTsp() {
 
     tsp = tsp / 3
 
-    document.getElementById('tbspValueFlip').innerText = tsp + " tablespoon(s)"
+    document.getElementById('tbspValueFlip').innerText = tsp.toFixed(1) + " tablespoon(s)"
 }
