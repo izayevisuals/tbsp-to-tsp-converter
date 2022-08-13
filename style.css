@@ -25,6 +25,7 @@ h1 {
     font-family: 'Hachi Maru Pop', cursive;
     color: rgb(61, 18, 18);
     font-size: 3rem;
+    transition: 2s;
 }
 
 p, span, h2 {
@@ -32,6 +33,7 @@ p, span, h2 {
     color: rgb(61, 18, 18);
     font-size: 1.3rem;
     display: block;
+    transition: 1s;
 }
 
 label {
@@ -71,6 +73,7 @@ label {
     font-weight: bold;
     cursor: pointer;
     margin: 1rem 0rem;
+    transition: 0.4s;
 }
 
 .convertButton:hover, button:hover {
@@ -88,6 +91,21 @@ input {
     background-color: rgb(247, 247, 237);
     padding: 0.5rem;
     font-weight: bold;
+}
+
+#cupsOunces button {
+    float: right;
+    color:rgb(247, 211, 237);
+    background-color: rgb(129, 81, 113);
+    border: 3px solid rgb(247, 211, 237);
+    transition: 0.4s;
+}
+
+#cupsOunces button:hover {
+    transition: 0.4s;
+    background-color:rgb(229, 144, 206);
+    color: rgb(129, 81, 113);
+    border: 3px solid rgb(129, 81, 113);
 }
 
 /* Media Query */

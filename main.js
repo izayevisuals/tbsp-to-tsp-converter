@@ -7,4 +7,3 @@ function convertTbsp() {
 
     document.getElementById('tspValue').innerText = tbsp + " teaspoon(s)"
 }
-
