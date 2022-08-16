@@ -1,3 +1,8 @@
 # tbsp-to-tsp-converter
  
-Creating a converter calculator for popular baking units. For now, I just have tbsp to tsp conversions. Still in the works, as of 8/8!
+Created a TBSP-to-TSP and CUPS-to-OUNCES converter calculator!
+
+# What I learned
+I learned how to peer program with a friend and she helped me shorten the length of a few JS functions.
+I learned how Event Listeners worked.
+I learned how to create multiple pages within the site.
